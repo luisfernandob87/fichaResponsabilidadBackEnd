@@ -1,0 +1,54 @@
+{
+  "kind": "collectionType",
+  "collectionName": "fichas",
+  "info": {
+    "singularName": "ficha",
+    "pluralName": "fichas",
+    "displayName": "ficha",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "fechaEntrega": {
+      "type": "date"
+    },
+    "equipo": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::equipo.equipo"
+    },
+    "serie": {
+      "type": "string"
+    },
+    "ubicacion": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::ubicacion.ubicacion"
+    },
+    "responsable": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::tecnico.tecnico"
+    },
+    "supervisor": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::tecnico.tecnico"
+    },
+    "motivo": {
+      "type": "string"
+    },
+    "fechaDevolucion": {
+      "type": "date"
+    },
+    "firmaResponsable": {
+      "type": "text"
+    },
+    "firmaEncargado": {
+      "type": "text"
+    }
+  }
+}

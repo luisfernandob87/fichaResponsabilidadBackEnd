@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tecnicos",
+  "info": {
+    "singularName": "tecnico",
+    "pluralName": "tecnicos",
+    "displayName": "tecnico",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nombreCompleto": {
+      "type": "string"
+    },
+    "correo": {
+      "type": "email"
+    },
+    "estado": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    }
+  }
+}
